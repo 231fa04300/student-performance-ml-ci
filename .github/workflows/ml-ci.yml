@@ -42,7 +42,7 @@ jobs:
         with:
           name: student-performance-ml-artifacts
           path: |
-            student_performance_model.pkl
+                        student_performance_model_missing.pkl
             metrics.json
           if-no-files-found: error
           retention-days: 7
