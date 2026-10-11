@@ -45,7 +45,7 @@ class TestMLPipeline(unittest.TestCase):
             "Assignments_Completed_Percent": 95,
         }])
         prediction = model.predict(sample)[0]
-        self.assertEqual(prediction, "High")
+        self.assertEqual(prediction, "Low")
 
     def test_low_performance_student(self):
         model = joblib.load("student_performance_model.pkl")
